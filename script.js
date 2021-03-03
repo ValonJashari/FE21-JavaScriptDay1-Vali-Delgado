@@ -118,3 +118,52 @@ var w5 = array_6[2][3];
 var w6 = array_6[2][1];
 
 console.log("The numbers selected are:\n\t", w2, "\n\t", w3, "\n\t", w4, "\n\t", w5, "\n\t", w6)
+
+
+// CHALLENGE 
+
+console.log("\t CHALLENGE EXERCISE 1\n")
+
+var array_7 = [['Viena'], ['is'], ['a'], ['nice'], ['city']]
+w7 = array_7.shift(0);
+console.log(w7)
+w8 = array_7.shift(1);
+console.log("\t",w8)
+w9 = array_7.shift(2);
+console.log("\t\t",w9)
+w10 = array_7.shift(3);
+console.log("\t\t\t",w10)
+w11 = array_7.shift(4);
+console.log("\t\t\t\t",w11)
+
+console.log("METHOD TWO:")
+console.log((w7), "\n\t",w8, "\n\t\t",w9,"\n\t\t\t",w10, "\n\t\t\t\t",w11)
+
+
+
+console.log("\t CHALLENGE EXERCISE 2\n")
+
+var string2 = "Properties,$a$set$of$immutable$values,$are$passed$to$a$component's$renderer$as$properties$in$its $HTML$tag.$A$component$cannot$directly$modify$any$properties$passed$to$it,$but$can$be$passed$ callback$functions$that$do$modify$values.$This$mechanism's$promise$is$expressed$as$properties $flow$down;$actions$flow$up";
+var string3 = string2.split("$").join(" ")
+ //string4 = string3.con
+console.log("The solution of exercise 2 is: \n", string3)
+//console.log(string2.join('$'))
+//console.log(string2.join());
+
+
+// Extra Exercises 
+
+console.log("\n\t Extra Exercises 1\n")
+
+var string5 = "Hey there, i am a javascript developer, and i live in vienna"
+
+var string6 = string5.substring(11,39);
+//console.log(string6)
+var string7 = string6.toUpperCase(0);
+console.log("The required shorted text is:\n\t\t",string7, "\n")
+
+console.log("\n\t Extra Exercises 2\n")
+
+console.log("Start = ", array3)
+array3.splice(2,0,"orange","strawberry")
+console.log("Output = ", array3)
