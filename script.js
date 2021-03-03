@@ -3,12 +3,12 @@ var text = "Hello from the console";
 console.log(text);
 
 var text_2 = "Hello from the Browser";
-document.write(text_2)
+document.write(text_2);
 
 /* Basic Exercise 2 */
 
 var text_3 = "Hi my name is Martin";
-console.log(text_3)
+console.log(text_3);
 
 /*Basi Exercise 3 */
 
@@ -52,7 +52,7 @@ console.log("The added method of orange is: ", d2) WHY IS NOT WORKING */
 
 var array_2 = ['dog', 'horse', 'monkey'];
 console.log("The second array is: ", array_2)
-array_2.splice(1, 0, 'cat')
+array_2.splice(0, 0, 'cat') // first 0 ist the index position, the second 0 which index we want to overwrite
 console.log("The second output of array 2 is: ", array_2)
 
 
@@ -78,7 +78,7 @@ var d = '36';
 
 var e = 42;
 
-var w = a + b + parseInt(c) + parseInt(d) + e;
+var w = a + b + parseInt(c) + parseInt(d) + e; //parseInt change the string to integer
 console.log("\tThe sum of the variables are: ", w)
 
 console.log("\nThe part b of the exercise 1:\n")
@@ -96,7 +96,7 @@ console.log("The multiplication of the variables is: ", w1)
 
 w3 = w / w1;
 
-console.log("The diviation of the results:", w3)
+console.log("The divition of the results:", w3)
 
 
 console.log("\t ADVANCED Exercise 2\n")
@@ -117,4 +117,24 @@ var w4 = array_6[5][3];
 var w5 = array_6[2][3];
 var w6 = array_6[2][1];
 
-console.log("The numbers selected are:\n\t", w2, "\n\t", w3, "\n\t", w4, "\n\t", w5, "\n\t", w6)
+console.log("The numbers selected are:\n\t", w2, "\n\t", w3, "\n\t", w4, "\n\t", w5, "\n\t", w6);
+
+// Excercise Challenge 1
+console.log("\t Challenge 1\n")
+
+var multi = [
+    ["Viena", null, null, null],
+    [null, "is", null, null],
+    [null, null, "nice", null],
+    [null, null, null, "city"]
+];
+console.log("\n\t The diagonally array ist:\n\t", multi);
+
+
+var multi2 = [
+    ["Viena", "-----", "-----", "-----", ],
+    ["-------", "is", "-----", "-----"],
+    ["-----", "-----", "nice", "-----"],
+    ["-----", "-----", "-----", "city"]
+];
+document.write("<br>The diagonally array ist:<br>", multi2[0], "<br>", multi2[1], "<br>", multi2[2], "<br>", multi2[3], );
